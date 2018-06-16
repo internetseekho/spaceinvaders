@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{435C8792-8CED-684F-1777-1C6A741F16E3}</ProjectGuid>
+    <ProjectGuid>{1F74617C-6850-6874-6BDC-43C8F7B65107}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,13 +59,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Entity\Enemy\EnemySpawer.cs" />
+    <Compile Include="Assets\Entity\Player\PlayerController.cs" />
+    <Compile Include="Assets\Entity\Spawner\Position.cs" />
     <Compile Include="Assets\scripts\LevelManager.cs" />
-    <Compile Include="Assets\scripts\PlayerController.cs" />
+    <Compile Include="Assets\shrederer.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Root/Desktop/workspace/SpaceInvaders/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Root/Desktop/workspace/spaceinvaders/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Root/Desktop/workspace/SpaceInvaders/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Root/Desktop/workspace/spaceinvaders/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
