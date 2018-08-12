@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212131667859437394}
   - component: {fileID: 50250820260838972}
   - component: {fileID: 61930051328197346}
-  m_Layer: 0
+  - component: {fileID: 114325113397354490}
+  m_Layer: 11
   m_Name: PlayerLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09, y: 0.33}
   m_EdgeRadius: 0
+--- !u!114 &114325113397354490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1155626291413540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21be875b1e504ba4dab1fa77bf962ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
 --- !u!212 &212131667859437394
 SpriteRenderer:
   m_ObjectHideFlags: 1

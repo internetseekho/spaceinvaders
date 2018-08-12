@@ -5,8 +5,9 @@ using UnityEngine;
 public class EnemySpawer : MonoBehaviour {
 
     public GameObject enemyPrefab;
-    public float width = 10f;
-    public float height = 5f;
+    public float width      = 10f;
+    public float height     = 5f;
+    public float spawnDelay = 0.5f;
 
     public float speed = 5f;
     bool movingLeft = true;
@@ -21,12 +22,24 @@ public class EnemySpawer : MonoBehaviour {
 
         xmin = leftMost.x;
         xmax = rightMost.x;
+        SpawanEnemiesUntillFull();
+    }
 
-        foreach (Transform child in transform) {
+    private void SpawanEnemies() {
+        foreach (Transform child in transform)
+        {
             GameObject Enemy = Instantiate(enemyPrefab, child.transform.position, Quaternion.identity) as GameObject;
             Enemy.transform.parent = child;
         }
+    }
 
+    private void SpawanEnemiesUntillFull() {
+        Transform freePosition = NextFreePosition();
+        if (freePosition){
+            GameObject Enemy = Instantiate(enemyPrefab, freePosition.transform.position, Quaternion.identity) as GameObject;
+            Enemy.transform.parent = freePosition;
+            Invoke("SpawanEnemiesUntillFull", spawnDelay);
+        }
     }
 
     private void OnDrawGizmos()
@@ -52,6 +65,30 @@ public class EnemySpawer : MonoBehaviour {
             movingLeft = true;
         }
 
+        if( AllMembersAreDead() ){
+            SpawanEnemiesUntillFull();
+        }
+
+    }
+
+    Transform NextFreePosition() {
+        foreach (Transform childCountProperty in transform)
+        {
+            if (childCountProperty.childCount == 0)
+            {
+                return childCountProperty;
+            }
+        }
+        return null;
+    }
+
+    bool AllMembersAreDead() {
+        foreach (Transform childCountProperty in transform) {
+            if (childCountProperty.childCount > 0 ) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
