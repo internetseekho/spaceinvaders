@@ -122,6 +122,9 @@ MonoBehaviour:
   Projectile: {fileID: 1155626291413540, guid: 4d6ef8be323ac6e458b825c7c1f73612, type: 2}
   projectileVelocity: 10
   shotingRate: 0.5
+  pointsValue: 150
+  fireSound: {fileID: 8300000, guid: 1a59ade2852ff694a8576efbbd881ddf, type: 3}
+  deathSound: {fileID: 8300000, guid: e966aaaf473c03041b7f7c20b9579bd2, type: 3}
 --- !u!212 &212137567779547956
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -154,8 +157,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -415271457
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 75fe9cce2b0a5ae4b93cf5f4bac1321d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

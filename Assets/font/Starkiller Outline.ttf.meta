@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 35d2ac29a61c29e4fb13fa5b5d011b6b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Starkiller Outline
+  fontNames:
+  - Starkiller Outline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 114fe642068d4f34787c98e936686606, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
