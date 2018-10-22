@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_scenes/Game.unity
+- path: Assets/_scenes/Lose.unity
   isLoaded: 1
   isActive: 1
